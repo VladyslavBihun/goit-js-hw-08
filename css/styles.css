@@ -13,7 +13,7 @@ img {
 }
 
 .gallery {
-  margin: 24px 156px;
+  margin: 24px auto;
   padding: 0;
   display: flex;
   flex-wrap: wrap;

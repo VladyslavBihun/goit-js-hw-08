@@ -84,12 +84,12 @@ function createMarkup(imagesArray) {
 
 function handleClick(event) {
     event.preventDefault();
+
     const originalImg = event.target.dataset.source;
 
     if (event.target !== event.currentTarget) {
 
-
-        console.log(originalImg);
+        const instance = basicLightbox.create(`<img src="${originalImg}">`);
+        instance.show()
     }
-    console.log(window);
-}
+};

@@ -87,9 +87,10 @@ function handleClick(event) {
 
     const originalImg = event.target.dataset.source;
 
-    if (event.target !== event.currentTarget) {
-
-        const instance = basicLightbox.create(`<img src="${originalImg}">`);
+  if (event.target !== event.currentTarget) {
+      
+    const instance = basicLightbox.create(`<img src="${originalImg}">`);
+    
         instance.show()
     }
 };
